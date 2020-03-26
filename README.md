@@ -29,3 +29,12 @@ with sphinx.
 excluded with `.gitignore`
 - All test functions should have name compliant to this patterns: `test_*` or
 `*_test`. It's required by `pytest`
+
+### Documentation
+This code uses Github pages for documentation. The github pages code is
+a copy of `documentation/` directory moved to `gh-pages` branch. You
+can visit the documentation page at https://nusiq.github.io/json_encoders/ 
+Github pages link is automatically generated with this pattern:
+```
+<USERNAME>.github.io/<REPOSITORY NAME>/
+```
