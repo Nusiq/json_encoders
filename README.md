@@ -38,3 +38,12 @@ Github pages link is automatically generated with this pattern:
 ```
 <USERNAME>.github.io/<REPOSITORY NAME>/
 ```
+
+### Coping documentation to gh-pages
+You can use the `mv_documentation.py` script to copy content of the
+`documentation/` folder (generated with `tox`) to `gh-pages` branch in order
+to publish it.
+
+The script checkouts to the `gh-pages` branch, removes all fiels
+and moves the content of `documentation/` directory to root directory. If you
+want to stage and commit that changes you have to do that manually.

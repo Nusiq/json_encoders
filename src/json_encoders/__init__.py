@@ -6,7 +6,8 @@ __version__ = '.'.join([str(x) for x in VERSION])
 class CompactEncoder(json.JSONEncoder):
     '''
     JSONEncoder which tries to find a compromise between compact and multiline
-    formatting from standard python json module.
+    formatting from standard python json module. Creates relatively compact
+    file which is also easy to read.
     '''
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
