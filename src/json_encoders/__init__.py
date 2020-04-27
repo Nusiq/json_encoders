@@ -1,6 +1,6 @@
 import json
 
-VERSION = (1, 0, 0)  # COMPATIBILITY BREAK, NEW FEATURE, BUGFIX
+VERSION = (1, 0, 1)  # COMPATIBILITY BREAK, NEW FEATURE, BUGFIX
 __version__ = '.'.join([str(x) for x in VERSION])
 
 class CompactEncoder(json.JSONEncoder):
@@ -59,7 +59,7 @@ class CompactEncoder(json.JSONEncoder):
                     f'{body_str}\n'
                     f'{ind}}}'
                 )
-        elif isinstance(obj, list):
+        elif isinstance(obj, (list, tuple)):
             primitive_list = True
             for i in obj:
                 if not self._is_primitive(i):
@@ -89,4 +89,6 @@ class CompactEncoder(json.JSONEncoder):
                 yield f'{ind}{str(obj).lower()}'
         elif obj is None:
             yield 'null'
+        else:
+            raise TypeError('Object of type set is not JSON serializable')
         self.indent -= 1

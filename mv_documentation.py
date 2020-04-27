@@ -6,7 +6,7 @@ import os
 import subprocess
 
 # Continue only if checkout is successful (return 0)
-if subprocess.call('git checkout gh-pages') == 0:
+if subprocess.call('git checkout gh-pages', shell=True) == 0:
     # Remove all files except whitelist
     whitelist = [
         '.git', '.gitignore', '.tox', '.mypy_cache', '.vscode', 'documentation',
