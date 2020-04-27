@@ -152,16 +152,16 @@
 <h1>json_encoders package<a class="headerlink" href="#json-encoders-package" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="module-json_encoders">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-json_encoders" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
+<dl class="py class">
 <dt id="json_encoders.CompactEncoder">
-<em class="property">class </em><code class="sig-prename descclassname">json_encoders.</code><code class="sig-name descname">CompactEncoder</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/json_encoders.html#CompactEncoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#json_encoders.CompactEncoder" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">json_encoders.</code><code class="sig-name descname">CompactEncoder</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/json_encoders.html#CompactEncoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#json_encoders.CompactEncoder" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">json.encoder.JSONEncoder</span></code></p>
 <p>JSONEncoder which tries to find a compromise between compact and multiline
 formatting from standard python json module. Creates relatively compact
 file which is also easy to read.</p>
-<dl class="method">
+<dl class="py method">
 <dt id="json_encoders.CompactEncoder.encode">
-<code class="sig-name descname">encode</code><span class="sig-paren">(</span><em class="sig-param">obj</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/json_encoders.html#CompactEncoder.encode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#json_encoders.CompactEncoder.encode" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">encode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/json_encoders.html#CompactEncoder.encode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#json_encoders.CompactEncoder.encode" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a JSON string representation of a Python data structure.</p>
 <p class="rubric">Example</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">CompactEncoder</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">({</span><span class="s2">&quot;foo&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="s2">&quot;baz&quot;</span><span class="p">]})</span>
@@ -170,9 +170,9 @@ file which is also easy to read.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="json_encoders.CompactEncoder.iterencode">
-<code class="sig-name descname">iterencode</code><span class="sig-paren">(</span><em class="sig-param">obj</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/json_encoders.html#CompactEncoder.iterencode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#json_encoders.CompactEncoder.iterencode" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">iterencode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/json_encoders.html#CompactEncoder.iterencode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#json_encoders.CompactEncoder.iterencode" title="Permalink to this definition">¶</a></dt>
 <dd><p>Encode the given object and yield each string representation line by
 line.</p>
 <p class="rubric">Example</p>
